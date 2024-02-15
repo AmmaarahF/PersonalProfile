@@ -4,13 +4,6 @@
     box-sizing: border-box;
     font-family: 'Open Sans' , sans-serif;
 }
-body{
-    height: 100vh;
-    background-color: black;
-    background-image: url("https://images.unsplash.com/photo-1541450805268-4822a3a774ca?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-size: cover;
-    background-position: center;
-}
 li{
     list-style: none;
 }
@@ -63,4 +56,38 @@ header{
     display: block;
     border-radius: 50%;
     overflow: hidden;
+    border: 0cm;
+}
+.container p{
+    color: #ffffff;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25pt;
+    position: relative;
+    top: 5px;
+    left: 12px;
+}
+.container{
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+.container::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 700px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+}
+.container{
+    display: block;
+    width: 300px;
+    height: 500px;
+    z-index: 1;
+}
+.par p{
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
 }
