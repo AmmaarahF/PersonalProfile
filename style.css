@@ -110,3 +110,15 @@ header{
     font-family: 'Times New Roman', Times, serif;
     font-size: 14pt;
 }
+.top p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    margin-left: 100px;
+}
+.top ul li{
+   
+    margin-left: 130px;
+}
+.top ul{
+    margin-top: 20px;
+}
