@@ -4,8 +4,27 @@
     box-sizing: border-box;
     font-family: 'Open Sans' , sans-serif;
 }
-li{
+.navbar ul li{
     list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+}
+.navbar ul li a{
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px; 
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
 }
 a{
     text-decoration: none;
