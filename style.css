@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'AgokaFamily';
+    src: url(font/AgokaFamily.otf.otf);
+    font-family: 'Vintage';
+    src: url(font/Vintage.ttf);
+    font-family: 'Mogent';
+    src: url(font/Mogent.otf)
+}
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +17,9 @@
     display: inline-block;
     position: relative;
     margin: 0 20px;
+}
+header{
+    background-color: #EB3D00;
 }
 .navbar ul li a{
     text-transform: uppercase;
@@ -26,7 +37,12 @@
 .navbar ul li:hover::after{
     width: 100%;
 }
+.icon, a{
+    padding-top: 10px;
+}
 a{
+    float: left;
+    padding-top: 9px;
     text-decoration: none;
     color: white;
     font-size: 1rem;
@@ -41,15 +57,17 @@ header{
 .navbar{
     width: 100%;
     height: 60px;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #EB3D00;
 }
 .navbar .icon a{
     font-size: 1.5rem;
     font-weight: bold;
+    padding-top: 6px;
 }
 .navbar .links {
     display: flex;
@@ -58,16 +76,19 @@ header{
 }
 .NameHeader p{
     font-size: 30pt;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color:#273248;
     font-weight: 800;
+    position: relative;
+    bottom: 300px;
 }
 .Sub p{
     font-size: 20pt;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 300px;
+    color:#273248;
     font-weight: 200;
 } 
 .pic img{
@@ -106,7 +127,7 @@ header{
     z-index: 1;
 }
 .par p{
-    color: #ffffff;
+    color:#273248;
     font-family: 'Times New Roman', Times, serif;
     font-size: 14pt;
 }
@@ -121,4 +142,18 @@ header{
 }
 .top ul{
     margin-top: 20px;
+}
+.pic{
+    position: relative;
+    left: 40px;
+    top: 50px;
+}
+.contactButton{
+    width: 120px;
+    height: 29px;
+    background-color: #EB3D00;
+    font-family: 'Mogent';
+    font-size: 15px;
+    position: relative;
+    bottom: 200px;
 }
