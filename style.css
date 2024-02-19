@@ -3,8 +3,8 @@
     src: url(font/AgokaFamily.otf.otf);
     font-family: 'Vintage';
     src: url(font/Vintage.ttf);
-    font-family: 'Mogent';
-    src: url(font/Mogent.otf)
+    /*font-family: 'Mogent';
+    src: url(font/Mogent.otf);*/
 }
 *{
     margin: 0;
