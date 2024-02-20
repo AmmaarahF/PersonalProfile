@@ -3,8 +3,14 @@
     src: url(font/AgokaFamily.otf.otf);
     font-family: 'Vintage';
     src: url(font/Vintage.ttf);
-    /*font-family: 'Mogent';
-    src: url(font/Mogent.otf);*/
+}
+@font-face {
+    font-family: 'Mogent';
+    src: url(font/Mogent.otf);
+}
+@font-face {
+    font-family: 'Designer';
+    src: url(font/Designer.otf);
 }
 *{
     margin: 0;
@@ -19,7 +25,7 @@
     margin: 0 20px;
 }
 header{
-    background-color: #EB3D00;
+    background-color:  #273248;
 }
 .navbar ul li a{
     text-transform: uppercase;
@@ -38,7 +44,7 @@ header{
     width: 100%;
 }
 .icon, a{
-    padding-top: 10px;
+    padding-bottom: 5px;
 }
 a{
     float: left;
@@ -62,7 +68,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #EB3D00;
 }
 .navbar .icon a{
     font-size: 1.5rem;
@@ -78,17 +83,17 @@ header{
     font-size: 30pt;
     color:#273248;
     font-weight: 800;
-    position: relative;
-    bottom: 300px;
-    left: 850px;
+    display: flex;
+    justify-content:right;
+    margin-right: 250px;
+    
 }
 .Sub p{
     font-size: 20pt;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    position: relative;
-    bottom: 300px;
-    left: 270px;
+    display: flex;
+    justify-content:right;
+    margin-right: 270px;
     color:#273248;
     font-weight: 200;
 } 
@@ -154,20 +159,25 @@ header{
     left: 250px;
     top: 40px;
 }
+.button{
+    
+    display: flex;
+    justify-content:right;
+    margin-right: 385px;
+}
 .contactButton{
     width: 120px;
     height: 29px;
-    background-color: #EB3D00;
+    color: white;
+    background-color:#273248;
     font-family: 'Mogent';
     font-size: 15px;
-    position: relative;
-    bottom: 200px;
-    left: 980px;
+    
 }
 .CVButton{
     width: 130px;
     height: 30px;
-    background-color: #EB3D00;
+    background-color: #273248;
     font-family: 'Mogent';
     font-size: 15px;
     position: relative;
