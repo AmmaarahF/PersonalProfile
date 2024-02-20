@@ -15,7 +15,52 @@
     background-size: cover;
     background-position: center;
 } 
-
+.blue{
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+.background-img{
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    width: 600px;
+    height: 600px;
+}
+.foreground-img{
+   position: absolute;
+   top: 200px;
+   left: 200px;
+   border-radius: 50%;
+}
+.NameHeader p{
+    font-size: 30pt;
+    color:#273248;
+    font-weight: 800;
+    position: relative;
+    bottom: 30px;
+    left: 850px;
+}
+.Sub p{
+    font-size: 20pt;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    left: 270px;
+    color:#273248;
+    font-weight: 200;
+} 
+.contactButton{
+    width: 120px;
+    height: 29px;
+    background-color: #EB3D00;
+    font-family: 'Mogent';
+    font-size: 15px;
+    position: relative;
+    bottom: 0px;
+    left: 980px;
+}
 </style>
 
 </head>
@@ -33,5 +78,17 @@
         </div>
     </div>
 </header>
+
+<div class="blue">
+    <img src="images/blue.png" alt="" class="background-img">
+    <img src="images/profilepic.JPG" alt="" class="foreground-img">
+</div>
+<div class="NameHeader">
+    <p>Ammaarah Fakier</p>
+</div>
+<div class="Sub">
+    <p>An aspiring software developer</p>
+</div>
+  <a href="ContactMe.html"><button class='contactButton' style="font-family: 'Mogent'; letter-spacing: 1px; ">CONTACT ME</button></a>
 </body>
 </html>
