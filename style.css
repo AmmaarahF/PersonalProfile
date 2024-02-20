@@ -164,3 +164,13 @@ header{
     bottom: 200px;
     left: 980px;
 }
+.CVButton{
+    width: 130px;
+    height: 30px;
+    background-color: #EB3D00;
+    font-family: 'Mogent';
+    font-size: 15px;
+    position: relative;
+    bottom: 200px;
+    left: 980px;
+}
