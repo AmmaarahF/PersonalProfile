@@ -11,10 +11,39 @@
 <style>
    body{
     height: 100vh;
-    background-color:  #FFEDD2;
+    background-color: #D9D8D9;
     background-size: cover;
     background-position: center;
 } 
+h1{
+    color: #273248; 
+    
+    padding-left: 0px;
+    padding-top: 60px;
+    
+}
+.Head-container{
+    display: inline-block;
+}
+.touch{
+   border-right: 5px solid;
+   width: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+   animation: typing 2s steps(6),
+   cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50% {
+        border-color: transparent;
+    }
+}
+@keyframes typing {
+    from{
+        width: 0;
+    }
+}
+
 
 </style>
 
@@ -22,7 +51,7 @@
 <body>
 <header>
     <div class="navbar">
-        <div class="icon"><a href="index.html" style="font-family: 'Vintage'; font-size: 40px; letter-spacing: 1px;">My Portfolio</a></div>
+        <div class="icon"><a href="index.html" style="font-family: 'Designer'; font-size: 40px; letter-spacing: 1px;">My Portfolio</a></div>
         <ul class="links">
             <li><a href="index.html">Home</a></li>
             <li><a href="AboutMe.html">About Me</a></li>
@@ -33,13 +62,14 @@
         </div>
     </div>
 </header>
-<div class="container">
-   <pre style="font-size: 120px; color: #273248; font-family: 'Times New Roman', Times, serif; padding-top: 10px; ;"><u style="text-decoration-thickness: 2px;"> About 
-              Me</u>
-              <div class="par" style="margin-left: 750px; margin-top: -600px; ">
-    <p>I am a hard-driven and creative thinker with a passion for coding.<br>I am skilled in managing complex projects, <br>quick to embrace in changes in priority, and highly self-motivated. <!--I'm <br>a positive and open-minded person who motivates and learn from <br>others as well. I have excellent leadership and management skills <br>developed from group projects/assignments which are important skills  <br>on developing projects or completing tasks. I hold a Diploma in Software  <br>development from Rosebank College, where I cultivated my skills in  <br>all languages I've learnt. My academic background, combined withhands-  <br>on experience in the industry, has equipped me with expertise to tackle diverse <br> challenges in software development--></p>
-</div></pre>
+<div class="Head-container">
+    <h1 style="font-family: 'milk'; font-size: 30pt;">About<br><span class="touch"><u>me.</u></span></h1>
 </div>
+
+<!--<div class="container">
+    <p>I am a hard-driven and creative thinker with a passion for coding.I am skilled in managing complex projects, quick to embrace in changes in priority, and highly self-motivated. I'm <br>a positive and open-minded person who motivates and learn from <br>others as well. I have excellent leadership and management skills <br>developed from group projects/assignments which are important skills  <br>on developing projects or completing tasks. I hold a Diploma in Software  <br>development from Rosebank College, where I cultivated my skills in  <br>all languages I've learnt. My academic background, combined withhands-  <br>on experience in the industry, has equipped me with expertise to tackle diverse <br> challenges in software development</p>
+</div>
+
 <div class="top">
     <p><u style="text-decoration-thickness: 2px; font-family: 'Times New Roman', Times, serif; font-size: 17pt; color: #273248; ">All relevant courses I've done</u></p>
     <ul>
@@ -52,7 +82,7 @@
         <li>Software Quality and Testing</li>
         <li>Work Integrated Learning</li>
     </ul>
-</div>
+</div>-->
 <a href=""><button class='CVButton' style="font-family: 'Mogent'; letter-spacing: 1px; ">DOWNLOAD CV</button></a>
 </body>
 </html>

@@ -10,69 +10,180 @@
 <title>Home Page</title>
 <style>
 body{
-    width: 100%;
+    
     height: 100%;
-    background-color: #FFEDD2;
+    background-color: #D9D8D9;
     background-size: cover;
     background-position: center;
 }  
-.img-container{
-    position: relative;
-    width: 500px;
-    height:300px;
+.navbar{
+   display:flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   background-color:  #273248 ;
 }
-.blue{
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
     position: relative;
-    width: 300px;
-    height: 200px;
+    margin: 0 20px;
 }
-.background-img{
+
+.navbar ul li a{
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px; 
+    width: 0;
+    background: white;
     position: absolute;
-    top: 70px;
-    left: 50px;
-    width: 600px;
-    height: 600px;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    margin-bottom: 2px;
 }
-.foreground-img{
-   position: absolute;
-   top: 200px;
-   left: 200px;
-   border-radius: 50%;
+.navbar ul li:hover::after{
+    width: 100%;
 }
+.icon, a{
+    padding-bottom: 5px;
+}
+a{
+    float: left;
+    padding-top: 9px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+a:hover{
+    color:black;
+}
+header{
+    background-color: #273248;
+    position: relative;
+    padding: 0 2rem;
+}
+.navbar{
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .icon a{
+    display: flex;
+    flex-wrap:nowrap;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 6px;
+}
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+
+}
+.pic_image{
+  position: relative;   
+  display: flex;
+}
+.blue_brush{
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    top:150px;
+    left: 150px;
+}
+.profile_pic{
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 210px;
+  
+}
+.sec{
+    position: relative;
+    margin-left: 60rem;
+    margin-top: 18rem;
+}
+.name{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.ed_name{
+    font-family: 'Designer';
+    font-size: 2rem;
+    color: #273248;
+}
+.sub{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+.ed_sub{
+    font-family: 'Designer';
+    font-size: 2rem;
+    color: #273248;
+}
+.btns{
+    display: flex;
+    position: relative;
+    margin-left: 60rem;
+    margin-bottom: 18rem;
+    
+}
+.btn{
+    background-color: #273248;
+    color: #D9D8D9;
+    padding: 5px 10px;
+}
+.abt_btn{
+    background-color: #273248;
+    color: #D9D8D9;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+
+
     
 </style>
 </head>
 <body>
 <header>
-    <div class="navbar">
-        <div class="icon"><a href="index.html" style="font-family: 'Designer'; font-size: 50px; letter-spacing: 1px;">My Portfolio</a></div>
+    <nav class="navbar">
+        <div class="icon"><a href="index.html" style="font-family: 'Designer'; font-size: 40px; letter-spacing: 1px;">My Portfolio</a></div>
         <ul class="links">
             <li><a href="index.html">Home</a></li>
             <li><a href="AboutMe.html">About Me</a></li>
-            <li><a href="ContactMe.html">Contact me</a></li>
+            <li><a href="ContactMe.html">Contact Me</a></li>
             <li><a href="Education.html">Education</a></li>
             <li><a href="Projects.html">Projects</a></li>
-
-
         </ul>
         </div>
-    </div>
-   <!--<i class="fa-solid fa-bars"></i>--> 
+    </nav>
 </header>
-<div class="blue">
-    <img src="images/blue.png" alt="" class="background-img">
-    <img src="images/profilepic.JPG" alt="" class="foreground-img">
+
+    <div class="pic_image">
+        <img class="blue_brush" src="images/blue.png" alt=""> 
+        <img class="profile_pic" src="images/profilepic.JPG" alt="">
+        
+    </div>
+ 
+<div class="sec">
+    <p class="name">Hello, I'm <br><span class="ed_name">Ammaarah Fakier</span></p><br>
+    <p class="sub">An Aspiring<br><span class="ed_sub">Software Developer</span></p><br>
 </div>
 
-<div class="NameHeader">
-    <p>Ammaarah Fakier</p>
+<div class="btns">
+  <button class="btn">Download CV</button>  
+  <button class="abt_btn">Contact Me</button>
 </div>
-<div class="Sub">
-    <p>An aspiring software developer</p>
-</div>
-<div class="button">
-    <a href="ContactMe.html"><button class='contactButton' style="font-family: 'Mogent'; letter-spacing: 1px; ">CONTACT ME</button></a>
-</div>
+
  
 </body>
 </html>
