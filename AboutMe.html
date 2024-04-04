@@ -9,39 +9,131 @@
     <link rel="stylesheet" text='text/css'href="style.css"/>
 <title>About Us</title>
 <style>
-   body{
-    height: 100vh;
+body{
+    width: 100%;
+    height: 100%;
     background-color: #D9D8D9;
     background-size: cover;
     background-position: center;
-} 
+}  
+.navbar{
+   width: 100%;
+   display:flex;
+   flex-wrap: nowrap;
+   align-items: center;
+  
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+}
+
+.navbar ul li a{
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px; 
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    margin-bottom: 2px;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.icon, a{
+    padding-bottom: 5px;
+}
+a{
+    float: left;
+    padding-top: 9px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+a:hover{
+    color:black;
+}
+header{
+    background-color:  #273248 ;
+    position: relative;
+    padding: 0 2rem;
+}
+.navbar{
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .icon a{
+    display: flex;
+    flex-wrap:nowrap;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 6px;
+}
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+
+}
 h1{
     color: #273248; 
-    
-    padding-left: 0px;
-    padding-top: 60px;
+    float: left;
+    padding: 60px 0 60px 60px;
     
 }
 .Head-container{
     display: inline-block;
 }
 .touch{
-   border-right: 5px solid;
    width: 100%;
    white-space: nowrap;
    overflow: hidden;
-   animation: typing 2s steps(6),
-   cursor .4s step-end infinite alternate;
+   
 }
-@keyframes cursor{
-    50% {
-        border-color: transparent;
+.touch::before{
+    color: #273248; 
+}
+.touch::after {
+    content: "Me.";
+    position: absolute;
+    display: inline-block;
+    border-right: 5px solid;
+    vertical-align: middle;
+    white-space: nowrap; /* Ensures it doesn't wrap */
+    overflow: hidden; /* Hides overflow */
+    animation: typing 4s steps(3) infinite;
+}
+.contact-container{
+        width: 360px;
+        height:400px;
+        margin:auto;
+        background-color: #7886ac;
+        text-align: center;
+        border: 3px solid #273248;
+        border-radius: 3px;
     }
+.container_{
+    text-align: center;
+    align-items: center;
 }
 @keyframes typing {
-    from{
+    0% {
         width: 0;
     }
+    5.9% {
+        width: 4.9%;
+    }
+    
 }
 
 
@@ -49,23 +141,25 @@ h1{
 
 </head>
 <body>
-<header>
-    <div class="navbar">
-        <div class="icon"><a href="index.html" style="font-family: 'Designer'; font-size: 40px; letter-spacing: 1px;">My Portfolio</a></div>
-        <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="AboutMe.html">About Me</a></li>
-            <li><a href="ContactMe.html">Contact me</a></li>
-            <li><a href="Education.html">Education</a></li>
-            <li><a href="Projects.html">Projects</a></li>
-        </ul>
-        </div>
-    </div>
-</header>
+    <header>
+        <nav class="navbar">
+            <div class="icon"><a href="index.html" style="font-family: 'Designer'; font-size: 40px; letter-spacing: 1px;">My Portfolio</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
 <div class="Head-container">
-    <h1 style="font-family: 'milk'; font-size: 30pt;">About<br><span class="touch"><u>me.</u></span></h1>
+    <h1 style="font-family: 'milk'; font-size: 30pt;">About<br><span class="touch"></span></h1>
 </div>
-
+<div class = "container_">
+    <p>I am a driven coder eager to leverage my skills, education, and leadership in challenging projects, fostering continuous learning and growth.</p>
+</div>
 <!--<div class="container">
     <p>I am a hard-driven and creative thinker with a passion for coding.I am skilled in managing complex projects, quick to embrace in changes in priority, and highly self-motivated. I'm <br>a positive and open-minded person who motivates and learn from <br>others as well. I have excellent leadership and management skills <br>developed from group projects/assignments which are important skills  <br>on developing projects or completing tasks. I hold a Diploma in Software  <br>development from Rosebank College, where I cultivated my skills in  <br>all languages I've learnt. My academic background, combined withhands-  <br>on experience in the industry, has equipped me with expertise to tackle diverse <br> challenges in software development</p>
 </div>
@@ -83,6 +177,6 @@ h1{
         <li>Work Integrated Learning</li>
     </ul>
 </div>-->
-<a href=""><button class='CVButton' style="font-family: 'Mogent'; letter-spacing: 1px; ">DOWNLOAD CV</button></a>
+
 </body>
 </html>

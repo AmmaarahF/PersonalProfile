@@ -149,7 +149,6 @@ form label{
         border: 3px solid #273248;
         border-radius: 3px;
     }
-
 @keyframes typing {
     0% {
         width: 0;
@@ -160,11 +159,8 @@ form label{
     
     
 }
-
-
-
 </style>
-
+<script src="contact.js" derfer></script>
 </head>
 <body>
     <header>
@@ -184,16 +180,19 @@ form label{
   <h1 style="font-family: 'milk'; font-size: 30pt;">Get<br>in<br><span class="touch"></span></h1>
 </div>
 <div class="contact-container">
-        <form>
-            <label>Username</label>
-            <input type="text" placeholder="Username" required>
+        <form id="form_id">
+            <label>Full name</label>
+            <input type="text" placeholder="Eg. John Doe" required>
             <label>Email</label>
             <input type="email" placeholder="Email" required>
-            <label>Password</label>
-            <input type="password" placeholder="password" required>
-            <button type="submit">Sign Up</button>
+            
+            <label>Reason</label>
+            <textarea name="about" id="" cols="40" rows="3" placeholder=" Reason for message..."></textarea>
+            <button type="submit">Submit</button>
         </form>
     </div>
 </div>
+<script src="contact.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
