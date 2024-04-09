@@ -135,10 +135,9 @@ h1{
     align-items: center;
     margin-left: 150px;
     margin-right: 150px;
-    margin-top: 150px;
-    border: 2px solid #273248;
+    margin-top: 80px;
     padding: 20px;
-    background-color: #b0b7cc;
+    background-color: #dfe3f1;
 }
 .about_p{
     text-align: center;
@@ -156,8 +155,41 @@ h1{
     }
     
 }
-
-
+img{
+    border: 2px solid #273248;
+    border-radius: 10%;
+    transition: transform 0.3s;
+}
+.one{
+    padding-left:10px;
+    padding-right:20px;
+}
+.two{
+    padding-left:10px;
+    padding-right:10px;
+}
+img:hover{
+    transform: scale(1.05);
+}
+.product figcaption {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* Centering content vertically */
+    flex-direction: column; /* Stacking content vertically */
+    height: 10%; /* Ensuring figcaption takes full height */
+    
+}
+.price {
+    font-size: 1.3rem;
+}
+.products-container{
+    display: flex;
+    justify-content: center; /* Center aligning the products horizontally */
+    flex-wrap: wrap;
+}
+.product{
+    padding: 20px;
+}
 </style>
 
 </head>
@@ -182,6 +214,26 @@ h1{
     <p class="about_p">I am a driven coder eager to leverage my skills, education, and leadership in challenging projects, fostering continuous learning and growth.<br> Beyond  coding, I'm
     enthusiatic about collaborating with diverse teams, and sharing knowledge. From designing scalable architectures to troubleshooting intricate bug, I thrive on challenges that come with building software. </p>
 </div>
+<section class="langs">
+    <div class="products-container">
+        <figure class="product">
+            <img src="images/java.189x256.png" alt="Avocado Flavour" style="width: 150px; height: 150px;">
+            <figcaption>Java<br><span class="price">********</span></figcaption>
+        </figure>
+        <figure class="product">
+            <img src="images/c.228x256.png" alt="Blueberry Flavour" style="width: 150px; height: 150px;">
+            <figcaption>C Sharp<br><span class="price">*******</span></figcaption>
+        </figure>
+        <figure class="product">
+            <img src="images/javascript-39415.png" alt="Strawberry Flavour" style="width: 150px; height: 150px;">
+            <figcaption>JavaScript<br><span class="price">*******</span></figcaption>
+        </figure>
+        <figure class="product">
+            <img src="images/pngegg.png" alt="Mint Flavour" style="width: 150px; height: 150px;">
+            <figcaption>Html<br><span class="price">********</span></figcaption>
+        </figure>
+    </div>
+</section>
 <!--
 <div class="top">
     <p><u style="text-decoration-thickness: 2px; font-family: 'Times New Roman', Times, serif; font-size: 17pt; color: #273248; ">All relevant courses I've done</u></p>
